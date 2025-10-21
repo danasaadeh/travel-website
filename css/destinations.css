@@ -4,7 +4,7 @@
   border-radius: 1.5rem;
   overflow: hidden;
   transition: all 0.3s ease;
-  background: #fff;
+  background: var(--bg);
   box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
   cursor: pointer;
   position: relative;
@@ -24,7 +24,7 @@
 }
 
 .destination-card .p-4 {
-  background: #fff;
+  background: var(--bg);
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }

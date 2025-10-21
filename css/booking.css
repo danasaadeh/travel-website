@@ -36,7 +36,7 @@
 
 .booking-card-small {
   position: absolute;
-  top: 180px;
+  top: 220px;
   right: -30px;
   width: 220px;
   background: var(--card-bg);
@@ -100,5 +100,34 @@
   }
   .booking-cards-wrapper {
     margin-bottom: 0;
+  }
+}
+
+body[dir="rtl"] .booking-cards-wrapper {
+  padding-right: 0;
+  padding-left: 80px;
+}
+
+body[dir="rtl"] .booking-card-small {
+  right: auto;
+  left: -30px;
+}
+
+@media (max-width: 1200px) {
+  body[dir="rtl"] .booking-card-small {
+    left: -20px;
+  }
+  body[dir="rtl"] .booking-cards-wrapper {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  body[dir="rtl"] .booking-cards-wrapper {
+    padding-left: 0;
+  }
+  body[dir="rtl"] .booking-card-small {
+    left: 20px;
+    right: auto;
   }
 }

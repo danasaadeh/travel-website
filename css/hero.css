@@ -3,9 +3,10 @@
   background-image: url("/images/hero-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right center;
   padding-top: 4rem;
   padding-bottom: 5rem;
+  transition: background-position 0.6s ease-in-out;
 }
 
 .hero-img {
@@ -101,4 +102,13 @@
   .hero h1 {
     font-size: 1.6rem;
   }
+}
+
+body[dir="rtl"] .hero {
+  background-position: left center;
+  transform: scaleX(-1);
+}
+
+body[dir="rtl"] .hero > * {
+  transform: scaleX(-1);
 }
