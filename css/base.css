@@ -1,0 +1,62 @@
+:root {
+  --bg: #fffefe;
+  --bg-soft: #f7f8fb;
+  --text: #5e6282;
+  --textn: #212832;
+  --primary: #14183e;
+  --accent: #df6951;
+  --highlight: #f1a501;
+  --card-bg: #ffffff;
+  --muted: #9aa0b3;
+  --border: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] {
+  --bg: #0e1114;
+  --bg-soft: #121417;
+  --text: #c9d0db;
+  --primary: #f4f6fb;
+  --accent: #ff7d68;
+  --highlight: #ffb470;
+  --card-bg: #121416;
+  --muted: #98a0b6;
+  --border: rgba(255, 255, 255, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Rubik", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+.text-accent {
+  color: var(--accent) !important;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.04);
+}
+
+.bg-light-section {
+  background: var(--bg-soft);
+}
+
+html[dir="rtl"],
+html[dir="ltr"] {
+  transition: all 0.3s ease;
+}

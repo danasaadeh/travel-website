@@ -1,0 +1,40 @@
+/* NavBar */
+
+.navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+  background: rgba(20, 20, 20, 0.9);
+}
+
+.navbar .nav-link {
+  color: var(--textn) !important;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.navbar .signup-btn {
+  color: var(--textn) !important;
+  border: 1px solid var(--primary);
+  width: 80px;
+}
+.navbar .signup-btn:hover {
+  background-color: transparent;
+}
+
+.navbar .navbar-nav {
+  margin-left: 270px !important;
+}

@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm py-2">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.svg" alt="logo" width="130" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNav"
+      aria-controls="mainNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-start" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="nav.destinations"
+            >Destinations</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="nav.hotels">Hotels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="nav.flights">Flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="nav.booking">Booking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-i18n="nav.login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="btn btn-outline-dark btn-sm ms-2 my-1 signup-btn nav-link"
+            href="#"
+            data-i18n="nav.signup"
+            >Sign Up</a
+          >
+        </li>
+        <li class="nav-item dropdown px-3">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="languageDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >EN</a
+          >
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li>
+              <a class="dropdown-item lang-option" href="#" data-lang="en"
+                >English</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item lang-option" href="#" data-lang="ar"
+                >العربية</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item ms-3">
+          <button id="themeToggle" class="btn btn-sm btn-secondary">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

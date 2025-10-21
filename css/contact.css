@@ -1,0 +1,57 @@
+/* contact */
+.contact-section {
+  background: url("../images/background.svg") no-repeat center;
+  position: relative;
+  padding: 5rem 0;
+}
+
+.contact-box {
+  border-radius: 25px;
+  padding: 60px 40px;
+  position: relative;
+  max-width: 850px;
+}
+
+.telegram-icon {
+  position: absolute;
+  top: -25px;
+  right: 50px;
+  width: 55px;
+  z-index: 2;
+}
+
+.email-group {
+  max-width: 450px;
+}
+.email-group .form-control {
+  border-radius: 0 8px 8px 0 !important;
+  padding-left: 10px;
+}
+.email-group .input-group-text {
+  border-radius: 8px 0 0 8px !important;
+}
+
+.contact-box .btn-accent {
+  background: linear-gradient(90deg, #ff946d, #ff7d68);
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 12px 28px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.contact-box .btn-accent:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .telegram-icon {
+    right: 50px;
+    top: -10px;
+    width: 45px;
+  }
+  .contact-box {
+    padding: 40px 20px;
+  }
+}
